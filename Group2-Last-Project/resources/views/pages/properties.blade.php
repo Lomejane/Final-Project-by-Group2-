@@ -7,6 +7,6 @@
     <title>{{config('app.name', 'Default Value')}}</title>
 </head>
 <body>
-  Properties page
+  This is Properties page write something here!
 </body>
 </html>

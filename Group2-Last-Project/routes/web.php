@@ -19,7 +19,7 @@ Route::get('home', 'App\Http\Controllers\PagesController@home');
 Route::get('contact', 'App\Http\Controllers\PagesController@contact');
 Route::get('modalwindow', 'App\Http\Controllers\PagesController@modalwindow');
 Route::get('properties', 'App\Http\Controllers\PagesController@properties');
+Route::get('navbar', 'App\Http\Controllers\PagesController@navbar');
 Route::resource('agent', 'App\Http\Controllers\ContactsController');
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', 'App\Http\Controllers\HomeController::class, 'index')->name('home');

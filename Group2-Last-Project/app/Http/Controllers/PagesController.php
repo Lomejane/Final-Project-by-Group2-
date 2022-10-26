@@ -37,5 +37,9 @@ class PagesController extends Controller
        public function signup(){
         return view('pages.signup');
        }
+
+       public function navbar(){
+        return view('navbar');
+       }
     
 }

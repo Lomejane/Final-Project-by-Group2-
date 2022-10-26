@@ -10,10 +10,6 @@ class PagesController extends Controller
         return view('pages.index');
        }
     
-       public function home(){
-        return view('pages.home');
-       }
-    
        public function about(){
         return view('pages.about');
        }
@@ -36,6 +32,10 @@ class PagesController extends Controller
     
        public function signup(){
         return view('pages.signup');
+       }
+
+       public function navbar(){
+        return view('navbar');
        }
     
 }

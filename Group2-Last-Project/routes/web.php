@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\PagesController@index');
 Route::get('about', 'App\Http\Controllers\PagesController@about');
-Route::get('home', 'App\Http\Controllers\PagesController@home');
 Route::get('contact', 'App\Http\Controllers\PagesController@contact');
 Route::get('modalwindow', 'App\Http\Controllers\PagesController@modalwindow');
 Route::get('properties', 'App\Http\Controllers\PagesController@properties');

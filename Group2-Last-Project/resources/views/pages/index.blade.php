@@ -5,41 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{config('app.name', 'Default Value')}}</title>
+
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('build/assets/app.css')}}">
     <link href="{{('/assets/app.css')}}" rel="stylesheet">
     <link href="{{('/assets/index.css')}}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    
-
-  </head>
-  <style>
-    /* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Po
-  }
   
-  body {
-    /* background-color: #c1cefa; */
-    /* height: 700vh;
-  } */ */
-/* 
-  #Home{
-    min-height: 65vh;
-  background-color: #09141d;
-  } */
-
-/* .HouseHero img {
-    margin-top: 3%;
-    height: 60vh;
-    width: 40vw;
-    border: solid black 1px;
-    border-top-left-radius: 190%;
-    border-top-right-radius: 190%;
-    border-bottom-left-radius: 0;
-  } */
-
-  </style>
   <body>
     @extends('layout.Navbar')
 
@@ -81,3 +53,4 @@
 
  </body> 
  </html>
+

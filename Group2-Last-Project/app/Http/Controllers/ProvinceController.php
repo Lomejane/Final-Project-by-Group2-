@@ -14,11 +14,17 @@ class ProvinceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $province = DB::table("province_tbl")
+        $selectedprov = $request->all();
+        $citymun = DB::table("city_municipality_tbl")
+        // $province = Province::orderBy("province_description", "asc")
+        ->leftJoin("province_tbl", "province_tbl.province_id", "=", "city_municipality_tbl.province_id" )
+        ->where("province_descriptioin", "=", $selectedprov)
+        // ->orderBy("province_description", "asc")
+        ->orderBy("city_mun_description", "asc")
         ->get();
-        return view('properties.index')->with('province', $province);
+        return view('properties.index')->with('city_mun_description', $citymun);
                  // ->orderBy("province_description", "asc")
     }
 

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ImageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,6 +19,7 @@ Route::get('footer', 'App\Http\Controllers\PagesController@footer');
 Route::get('about', 'App\Http\Controllers\PagesController@about');
 Route::get('contact', 'App\Http\Controllers\PagesController@contact');
 Route::get('modalwindow', 'App\Http\Controllers\PagesController@modalwindow');
+
 Route::get('properties', 'App\Http\Controllers\PagesController@properties');
 Route::get('signup', 'App\Http\Controllers\PagesController@signup');
 Route::get('signin', 'App\Http\Controllers\PagesController@signin');
@@ -38,4 +39,24 @@ Route::resource('homepageproperties', 'App\Http\Controllers\HomePagePropertiesCo
 //  Routes for Home Images
 
 Route::get('/add-image', [HomeImagesController::class, 'create'])->name('image.add');
+
+
+
+// Route::get('properties', 'App\Http\Controllers\PagesController@properties');
+Route::resource('agent', 'App\Http\Controllers\ContactsController');
+Route::resource('properties', 'App\Http\Controllers\PropertiesController');
+Route::resource('province', 'App\Http\Controllers\ProvinceController');
+// Auth::routes();
+
+Route::get('/add-image', [ImageController::class, 'create'])->name('image.add');
+Route::post('/store-image', [ImageController::class, 'store'])->name('image.store');
+Route::get('/show-image', [ImageController::class, 'show'])->name('image.show');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Auth::routes();
+
+
+Route::get('navbar', 'App\Http\Controllers\PagesController@navbar');
+Route::resource('agent', 'App\Http\Controllers\ContactsController');
+
+// Route::get('/home', 'App\Http\Controllers\HomeController::class, 'index')->name('home');
 

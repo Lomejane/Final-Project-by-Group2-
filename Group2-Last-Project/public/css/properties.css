@@ -61,6 +61,37 @@ body{
     /* vertical-align: top; */
     transition:all 1s;
     /* justify-content: space-around; */
+  }
+  .imageProp {
+    border-radius: 15px;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+  
+  }
+  .modalBody {
+    border-radius: 15px;
+    width: 400;
+    height: 650;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    /* float: left; */
+    background-color: whitesmoke;
+    color: black;
+    /* width: fit-content; */
+    /* height: 500px; */
+    /* text-align: center; */
+    /* display: none; Hidden by default */
+    padding: 5px;
+    /* margin: 10px; */
+    /* -webkit-transition: transform .5s; */
+    /* transform-origin: center; */
+    z-index: 4;
+    /* vertical-align: top; */
+    /* transition:all 1s; */
+    /* justify-content: space-around; */
   
   }
   .propertiesItem:hover {

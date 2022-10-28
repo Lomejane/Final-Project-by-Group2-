@@ -20,18 +20,28 @@ class PropertiesController extends Controller
         $properties = DB::table("properties_tbl")
         ->leftJoin("province_tbl", "properties_tbl.property_province_id", "=", "province_tbl.province_id")
         ->leftJoin("city_municipality_tbl", "properties_tbl.city_mun_id", "=", "city_municipality_tbl.city_mun_id")
-        // ->leftJoin("image_tbl", "property_image_id", "=", "image_tbl.image_id")
-        ->leftJoin("images", "property_image_id", "=", "images.id") 
+        ->leftJoin("image_tbl", "property_image_id", "=", "image_tbl.image_id")
+        ->leftJoin("images", "property_image_id", "=", "images.id")
         ->orderBy("province_description", "asc")
         ->get();
-        return view('properties.index')->with('properties', $properties);
+        // return view('properties.index')->with('properties', $properties);
 
-        //province_tbl query
+        // province_tbl query
         $province = DB::table("province_tbl")
-        ->distinct('province_description')
         ->orderBy("province_description", "asc")
         ->get();
-        return view('properties.index')->with('properties', $properties);
+
+        //City_Municipality_tbl query
+        $citymunicipality = DB::table("city_municipality_tbl")
+        ->orderBy("city_mun_description", "asc")
+        ->get();
+
+        $data = [
+            'properties' => $properties,
+            'province' => $province,
+            'citymunicipality' =>$citymunicipality
+        ];
+        return view('properties.index')->with($data);
 
 
     }

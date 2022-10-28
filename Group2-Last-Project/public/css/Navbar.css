@@ -1,3 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ 
+  }
+
+
 .navbar-brand {
     /* position: relative;  */
     width: 170px;
@@ -23,3 +32,7 @@ a.navlink :hover{
 .icon-bar {
     background-color:rgb(126, 60, 60);
 } */
+
+footer {
+    min-height: 30vh;
+}

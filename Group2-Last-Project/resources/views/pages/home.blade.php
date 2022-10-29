@@ -84,7 +84,7 @@
               <div class="row">
                 <div class="col">
                   <img class="shadow lg p-1 mb-2" src="/assets/DiningArea.jpg" style="width: 240px;
-                      min-height: 28vh;  border-top-right-radius: 10px;
+                      min-height: 28vh;  border-top-left-radius: 10px;
                       border-bottom-left-radius: 15px;
                       border-bottom-right-radius: 15px;" alt="Dining Area">
                        {{-- <div class="card-img-overlay">
@@ -95,7 +95,7 @@
       
                   <div class="col">
                     <img class="shadow lg p-1 mb-2" src="/assets/Mindanao.jpg" style="width: 240px;
-                      min-height: 28vh; border-top-right-radius: 10px;
+                      min-height: 28vh; border-top-left-radius: 10px;
                       border-bottom-left-radius: 15px;
                       border-bottom-right-radius: 15px;" alt="Dining Area">
                   </div>

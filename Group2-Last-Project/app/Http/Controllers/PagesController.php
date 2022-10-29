@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function index(){
-        return view('pages.index');
+        return view('pages.home');
        }
     
        public function about(){
@@ -26,16 +26,51 @@ class PagesController extends Controller
         return view('pages.contact');
        }
     
-       public function login(){
-        return view('pages.login');
-       }
-    
        public function signup(){
         return view('pages.signup');
        }
-
-       public function navbar(){
-        return view('navbar');
+       public function signin(){
+        return view('pages.signin');
        }
+       public function agentaccount(){
+        return view('Agent.agentaccount');
+       }
+       public function ownersaccount(){
+        return view('Owners.ownersaccount');
+       }
+
+    //    Admin
+    public function adminsidebar(){
+     return view('Admin.adminsidebar');
+    }
     
+    public function dashboard(){
+        return view('Admin.dashbord');
+    }
+    public function adduser(){
+        return view('Admin.adduser');
+    }
+
+    public function usermanagement(){
+        return view('Admin.usermanagement');
+    }
+    public function propertylist(){
+        return view('Admin.propertylist');
+    }
+    public function profile(){
+        return view('Admin.profile');
+    }
+
+    // Agent
+
+    public function agentdashboard(){
+        return view('Agent.agentdashboard');
+    }
+
+    public function listings(){
+        return view('Agent.listings');
+    }
+    public function agentprofile(){
+        return view('Agent.agentprofile');
+    }
 }

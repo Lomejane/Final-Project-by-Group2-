@@ -8,7 +8,8 @@
     <link href="{{'/css/agent.css'}}" rel="stylesheet" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Agent Account</title>
+    <title>Owners Account</title>
+ 
 </head>
 <body>
 
@@ -24,33 +25,29 @@
             </span>
             <h3>Home</h3>
         </a>
-        <a href="{{'agentdashboard'}}">
+        <a href="#">
             <span class="material-symbols-sharp">
                 space_dashboard
             </span>
             <h3>Dashboard</h3>    
             </a>
-            <a href="{{'agentprofile'}}">
+            <a href="#">
                 <span class="material-symbols-sharp">
                     person
                 </span>
-            <h3>Profile</h3>
-            <a href="{{'listings'}}">
+            <h3>Acount</h3>
+            <a href="#">
                 <span class="material-symbols-sharp">
                     apartment
                 </span>
                 <h3>Properties</h3>
             </a>
-            <a href="{{''}}">
+            <a href="#">
                 <span class="material-symbols-sharp">
                     real_estate_agent
                     </span>
                 <h3>Sales</h3>
-            </a>
-            <br>
-            <br>
-            <br>
-            <br>
+            </a><br><br> <br><br> <br>
             <a href="">
                 <span class="material-symbols-sharp">
                     logout
@@ -58,7 +55,5 @@
                 <h3>Logout</h3>
             </a>
     </div>
-    @yield('content')
-
 </body>
 </html>

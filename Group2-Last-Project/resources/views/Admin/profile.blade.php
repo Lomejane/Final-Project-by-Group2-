@@ -1,8 +1,7 @@
-@extends('Agent.agentaccount')
+@extends('Admin.adminsidebar')
 
 
 @section('content')
-
 <div class="container">
     <div class="row">
         <div class="card bg-light" style="height: 20rem; background-image: url('/assets/bgimage.jpg');">
@@ -14,7 +13,7 @@
     </div>
     <br>
 </div>
-    <div class="container bg-light">
+<div class="container bg-light">
         <div class="row" style="padding: 10px;">
                 <div class="col-5">
                     <h5>Account Information</h5>
@@ -52,7 +51,6 @@
                             <label>Password</label>
                             <input type="text" class="form-control w-100" name="" id="">
                         </form>
-                        <br>
                         <button class="btn btn-dark">Update</button>
                         <button class="btn btn-primary">Cancel</button>
                          </div>
@@ -60,6 +58,9 @@
                   </div>
                 </div>
               </div>
+
         </div>
+  
     </div>
+
 @endsection

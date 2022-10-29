@@ -8,7 +8,7 @@
     <link href="{{'/css/agent.css'}}" rel="stylesheet" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Agent Account</title>
+    <title>DB Sidebar</title>
 </head>
 <body>
 
@@ -18,35 +18,31 @@
     </nav>
 </header>
     <div class="sidebar">
-        <a href="#home">
+        <a href="{{'home'}}">
             <span class="material-symbols-sharp">
                 home
             </span>
             <h3>Home</h3>
         </a>
-        <a href="{{'agentdashboard'}}">
+        <a href="{{'dashboard'}}">
             <span class="material-symbols-sharp">
                 space_dashboard
             </span>
             <h3>Dashboard</h3>    
             </a>
-            <a href="{{'agentprofile'}}">
+            <a href="{{'profile'}}">
                 <span class="material-symbols-sharp">
                     person
                 </span>
-            <h3>Profile</h3>
-            <a href="{{'listings'}}">
+            <h3>Users</h3>
+            <a href="{{'propertylist'}}">
                 <span class="material-symbols-sharp">
                     apartment
                 </span>
                 <h3>Properties</h3>
             </a>
-            <a href="{{''}}">
-                <span class="material-symbols-sharp">
-                    real_estate_agent
-                    </span>
-                <h3>Sales</h3>
-            </a>
+            <br>
+            <br>
             <br>
             <br>
             <br>
@@ -59,6 +55,5 @@
             </a>
     </div>
     @yield('content')
-
 </body>
 </html>

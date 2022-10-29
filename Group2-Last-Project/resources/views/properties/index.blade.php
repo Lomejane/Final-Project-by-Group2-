@@ -30,7 +30,7 @@
 </head>
 
 
-@extends ('layouts.app')
+@extends (layout['app', 'Navbar'])
 
 @section('content')
 

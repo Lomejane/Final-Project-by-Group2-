@@ -28,7 +28,7 @@
 <body style="background-color: #FAD9C1">
   <nav class="navbar navbar-expand-lg" style="background-color: #10202b;">
     <div class="container-fluid text-white">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         <img src="/assets/1.png" alt="Company Logo" width="120px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/home">Home</a>
+            <a class="nav-link" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/properties">Properties</a>
@@ -47,25 +47,11 @@
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Signup
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/signup">Owner</a></li>
-              <li><a class="dropdown-item" href="/signup">Agent</a></li>
-              <li><a class="dropdown-item" href="/signup">Admin</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="/signup">SignUp</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             SignIn
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Owner</a></li>
-              <li><a class="dropdown-item" href="#">Agent</a></li>
-              <li><a class="dropdown-item" href="#">Admin</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="/signin">SignIn</a>
           </li>
         </ul>
       </div>

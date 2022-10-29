@@ -14,9 +14,33 @@ use App\Http\Controllers\ImageController;
 */
 
 Route::get('/', 'App\Http\Controllers\PagesController@index');
+Route::get('navbar', 'App\Http\Controllers\PagesController@navbar');
+Route::get('footer', 'App\Http\Controllers\PagesController@footer');
 Route::get('about', 'App\Http\Controllers\PagesController@about');
 Route::get('contact', 'App\Http\Controllers\PagesController@contact');
 Route::get('modalwindow', 'App\Http\Controllers\PagesController@modalwindow');
+
+Route::get('properties', 'App\Http\Controllers\PagesController@properties');
+Route::get('signup', 'App\Http\Controllers\PagesController@signup');
+Route::get('signin', 'App\Http\Controllers\PagesController@signin');
+Route::get('agentaccount', 'App\Http\Controllers\PagesController@agentaccount');
+Route::get('ownersaccount', 'App\Http\Controllers\PagesController@ownersaccount');
+Route::get('adminsidebar', 'App\Http\Controllers\PagesController@adminsidebar');
+Route::get('users', 'App\Http\Controllers\PagesController@users');
+Route::get('dashboard', 'App\Http\Controllers\PagesController@dashboard');
+Route::get('adduser', 'App\Http\Controllers\PagesController@adduser');
+Route::get('usermanagement', 'App\Http\Controllers\PagesController@usermanagement');
+Route::get('propertylist', 'App\Http\Controllers\PagesController@propertylist');
+Route::get('agentdashboard', 'App\Http\Controllers\PagesController@agentdashboard');
+Route::get('profile', 'App\Http\Controllers\PagesController@profile');
+Route::get('listings', 'App\Http\Controllers\PagesController@listings');
+Route::get('agentprofile', 'App\Http\Controllers\PagesController@agentprofile');
+Route::resource('homepageproperties', 'App\Http\Controllers\HomePagePropertiesController');
+//  Routes for Home Images
+
+Route::get('/add-image', [HomeImagesController::class, 'create'])->name('image.add');
+
+
 
 // Route::get('properties', 'App\Http\Controllers\PagesController@properties');
 Route::resource('agent', 'App\Http\Controllers\ContactsController');

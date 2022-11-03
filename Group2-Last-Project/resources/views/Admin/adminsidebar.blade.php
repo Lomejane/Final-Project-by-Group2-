@@ -14,11 +14,11 @@
 
 <header>
     <nav class="Navbar">
-        <img src="./assets/lem-logo.png" alt="" class="Logo">
+        <a href="/"><img src="./assets/lem-logo.png" alt="" class="Logo"></a>
     </nav>
 </header>
     <div class="sidebar">
-        <a href="{{'home'}}">
+        <a href="/">
             <span class="material-symbols-sharp">
                 home
             </span>

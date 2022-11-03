@@ -18,6 +18,7 @@ Route::get('navbar', 'App\Http\Controllers\PagesController@navbar');
 Route::get('footer', 'App\Http\Controllers\PagesController@footer');
 Route::get('about', 'App\Http\Controllers\PagesController@about');
 Route::get('contact', 'App\Http\Controllers\PagesController@contact');
+Route::get('pricing', 'App\Http\Controllers\PagesController@pricing');
 Route::get('modalwindow', 'App\Http\Controllers\PagesController@modalwindow');
 
 Route::get('properties', 'App\Http\Controllers\PagesController@properties');

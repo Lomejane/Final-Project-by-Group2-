@@ -241,4 +241,7 @@ class PagesController extends Controller
     public function signinadmin(){
         return view('Types of Login.loginadmin');
     }
+    public function subscribe(){
+        return view('subscribe.index');
+    }
 }

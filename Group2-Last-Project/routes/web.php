@@ -74,6 +74,7 @@ Route::get('searchhomeproperties', [App\Http\Controllers\PagesController::class,
 
 
 Route::get('navbar', 'App\Http\Controllers\PagesController@navbar');
+Route::get('subscribe', 'App\Http\Controllers\PagesController@subscribe');
 // Route::resource('agent', 'App\Http\Controllers\ContactsController');
 
 // Route::get('/home', 'App\Http\Controllers\HomeController::class, 'index')->name('home');

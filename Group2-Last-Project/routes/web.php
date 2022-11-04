@@ -18,6 +18,7 @@ Route::get('navbar', 'App\Http\Controllers\PagesController@navbar');
 Route::get('footer', 'App\Http\Controllers\PagesController@footer');
 Route::get('about', 'App\Http\Controllers\PagesController@about');
 Route::get('contact', 'App\Http\Controllers\PagesController@contact');
+Route::get('pricing', 'App\Http\Controllers\PagesController@pricing');
 Route::get('modalwindow', 'App\Http\Controllers\PagesController@modalwindow');
 
 // Route::get('properties', 'App\Http\Controllers\PagesController@properties');
@@ -36,8 +37,19 @@ Route::get('profile', 'App\Http\Controllers\PagesController@profile');
 Route::get('listings', 'App\Http\Controllers\PagesController@listings');
 Route::get('agentprofile', 'App\Http\Controllers\PagesController@agentprofile');
 Route::resource('homepageproperties', 'App\Http\Controllers\HomePagePropertiesController');
-//  Routes for Home Images
 
+//  Routes for Sign Up
+Route::get('signupowner', 'App\Http\Controllers\PagesController@signupowner');
+Route::get('signupagent', 'App\Http\Controllers\PagesController@signupagent');
+Route::get('signupadmin', 'App\Http\Controllers\PagesController@signupadmin');
+
+//  Routes for Sign In
+Route::get('signinowner', 'App\Http\Controllers\PagesController@signinowner');
+Route::get('signinagent', 'App\Http\Controllers\PagesController@signinagent');
+Route::get('signinadmin', 'App\Http\Controllers\PagesController@signinadmin');
+
+
+//  Routes for Home Images
 Route::get('/add-image', [HomeImagesController::class, 'create'])->name('image.add');
 
 

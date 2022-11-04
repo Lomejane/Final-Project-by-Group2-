@@ -25,6 +25,9 @@ class PagesController extends Controller
        public function contact(){
         return view('pages.contact');
        }
+       public function pricing(){
+        return view('pages.pricing');
+       }
     
        public function signup(){
         return view('pages.signup');
@@ -72,5 +75,27 @@ class PagesController extends Controller
     }
     public function agentprofile(){
         return view('Agent.agentprofile');
+    }
+
+    // Sign Up 
+    public function signupowner(){
+        return view('Types of Signup.signupowner');
+    }
+    public function signupagent(){
+        return view('Types of Signup.signupagent');
+    }
+    public function signupadmin(){
+        return view('Types of Signup.signupadmin');
+    }
+
+    // Sign In
+    public function signinowner(){
+        return view('Types of Login.loginowner');
+    }
+    public function signinagent(){
+        return view('Types of Login.loginagent');
+    }
+    public function signinadmin(){
+        return view('Types of Login.loginadmin');
     }
 }

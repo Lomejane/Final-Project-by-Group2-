@@ -25,12 +25,23 @@
     {{-- Links and scripts from here up to the next marker above are added by Enerio: --}}
 
 </head>
+
+<body>
+
 <body style="background-color: #FAD9C1">
   <nav class="navbar navbar-expand-lg" style="background-color: #10202b;">
+
     <div class="container-fluid text-white">
+<<<<<<< HEAD
       <a class="navbar-brand" href="#">
         <img src="/assets/1.png" alt="Company Logo" width="120px"></a>
       <button class="navbar-toggler bg-dark mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+=======
+      <a class="navbar-brand" href="/">
+        <img src="/assets/1.png" alt="Company Logo" width="120px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+>>>>>>> 87398bf68e412b0c8dee269fa347d7bb8dad3873
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse pl-2" id="navbarNavDropdown">
@@ -47,25 +58,14 @@
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Signup
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/signup">Owner</a></li>
-              <li><a class="dropdown-item" href="/signup">Agent</a></li>
-              <li><a class="dropdown-item" href="/signup">Admin</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="/pricing">Pricing</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             SignIn
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Owner</a></li>
-              <li><a class="dropdown-item" href="#">Agent</a></li>
-              <li><a class="dropdown-item" href="#">Admin</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="/signup">SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/signin">SignIn</a>
           </li>
         </ul>
       </div>
@@ -78,40 +78,64 @@
  <div>
   @yield('content')
  </div>
+ 
+  <div className="container">
+  <footer class="py-6 row justify-content-md-center">
+    <div class="row w-75 d-flex justify-content-between">
+      <div class="col-2" style="width: 15vw;">
+        <ul class="nav flex-column">
+          <h5>Explore</h5>
+          <li class="nav-item mb-2"><a href="">Home</a></li>
+          <li class="nav-item mb-2"><a href="">Properties</a></li>
+          <li class="nav-item mb-2"><a href="">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="">Sign Up</a></li>
+        </ul>
+      </div>
 
-  <footer style="background-color: pink">
-    <div class="row text-center">
-      <div class="col">
-        <h5>Explore</h5>
-        <li><a href="">Home</a></li>
-        <li><a href="">Properties</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="">Sign Up</a></li>
+      <div class="col-2" style="width: 15vw;">
+        <ul class="nav flex-column">
+          <h5>Latest Properties</h5>
+          <li class="nav-item mb-2"><a href="">Metro Manila</a></li>
+          <li class="nav-item mb-2"><a href="">Luzon</a></li>
+          <li class="nav-item mb-2"><a href="">Visayas</a></li>
+          <li class="nav-item mb-2"><a href="">Mindanao</a></li>
+        </ul>
       </div>
-      <div class="col">
-        <h5>Latest Properties</h5>
-        <li><a href="">Metro Manila</a></li>
-        <li><a href="">Luzon</a></li>
-        <li><a href="">Visayas</a></li>
-        <li><a href="">Mindanao</a></li>
+
+      <div class="col-2"style="width: 15vw;">
+        <ul class="nav flex-column">
+          <h5>Follow Us</h5>
+          <li class="nav-item mb-2"><a href="">Youtube</a></li>
+          <li class="nav-item mb-2"><a href="">Instagram</a></li>
+          <li class="nav-item mb-2"><a href="">Facebook</a></li>
+          <li class="nav-item mb-2"><a href="">Twitter</a></li>
+        </ul>
       </div>
-      <div class="col">
-        Follow Us
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Youtube</a></li>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Twitter</a></li>
+
+      <div className="col-4" style="width: 16vw;">
+        <div class="card shadow lg p-1 mb-2" style="width: 15vw; padding: 5px; background-color: #FAD9C1">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>We'll provide recent updates on property listings, promotions, sales and more.</p>
+            <input type="text" class="form-control w-100" name="email" placeholder="Email">
+            <br>
+            {{-- <button  class="btn btn-dark btn-lg w-100" type="submit">Subscribe</button> --}}
+            <button type="button" class="btn-lg w-100" style="font-family:'Poppins', sans-serif; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Subscribe</button>
+          </form>
+        </div>
       </div>
-      <div class="col">
-        <h5>Subscribe to our newsletter</h5>
-        <p>We'll provife updates on recent property listings, promotions, sales and more.</p>
-        <label for="">Email</label>
-        <input type="text" name="email">
-        <button type="submit">Subscribe</button>
+      <br>
+      <div class="py-5 my-5" style="border-top: 1px solid black;">
+        <p>© 2022 Lem Properties.ph, All rights reserved.</p>
       </div>
     </div>
+      
   </footer>
-{{-- script below added by Enerio --}}
+
+  </div>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </body>
 </html>

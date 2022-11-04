@@ -69,6 +69,7 @@ class PropertiesController extends Controller
     
             // province_tbl query
             $province = DB::table("province_tbl")
+            ->where('province_id', '=', $filter_province)
             ->orderBy("province_description", "asc")
             ->get();
     
@@ -99,6 +100,7 @@ class PropertiesController extends Controller
     
             //City_Municipality_tbl query
             $citymunicipality = DB::table("city_municipality_tbl")
+            ->where('province_id', '=', $filter_province)
             ->orderBy("city_mun_description", "asc")
             ->get();
 

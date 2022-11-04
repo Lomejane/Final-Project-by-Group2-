@@ -13,9 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('home__images', function (Blueprint $table) {
-            $table->id();
-            $table->string('images');
+        Schema::create('front_images', function (Blueprint $table) {
+            $table->front_images_id();
+            $table->string('property_type');
+            $table->string('image');
+            $table->string('property_description');
+            $table->string('property_location');
+            $table->string('property_price');
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('home__images');
+        Schema::dropIfExists('front_images');
     }
 };

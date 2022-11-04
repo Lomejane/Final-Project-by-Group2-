@@ -73,12 +73,12 @@
   @yield('content')
  </div>
  
-  <div className="container">
+  <div className="container" style="width: 100vw;">
   <footer class="py-6 row justify-content-md-center">
     <div class="row w-75 d-flex justify-content-between">
       <div class="col-2" style="width: 15vw;">
         <ul class="nav flex-column">
-          <h5>Explore</h5>
+          <h4>Explore</h4>
           <li class="nav-item mb-2"><a href="">Home</a></li>
           <li class="nav-item mb-2"><a href="">Properties</a></li>
           <li class="nav-item mb-2"><a href="">Pricing</a></li>
@@ -128,8 +128,6 @@
 
   </div>
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
 </body>
 </html>

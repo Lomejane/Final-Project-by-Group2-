@@ -36,7 +36,7 @@ Route::get('agentdashboard', 'App\Http\Controllers\PagesController@agentdashboar
 Route::get('profile', 'App\Http\Controllers\PagesController@profile');
 Route::get('listings', 'App\Http\Controllers\PagesController@listings');
 Route::get('agentprofile', 'App\Http\Controllers\PagesController@agentprofile');
-Route::resource('homepageproperties', 'App\Http\Controllers\HomePagePropertiesController');
+// Route::resource('homepageproperties', 'App\Http\Controllers\HomePagePropertiesController');
 
 //  Routes for Sign Up
 Route::get('signupowner', 'App\Http\Controllers\PagesController@signupowner');
@@ -50,7 +50,7 @@ Route::get('signinadmin', 'App\Http\Controllers\PagesController@signinadmin');
 
 
 //  Routes for Home Images
-Route::get('/add-image', [HomeImagesController::class, 'create'])->name('image.add');
+// Route::get('/add-image', [HomeImagesController::class, 'create'])->name('image.add');
 
 
 
@@ -66,12 +66,15 @@ Route::resource('province', 'App\Http\Controllers\ProvinceController');
 Route::get('/add-image', [ImageController::class, 'create'])->name('image.add');
 Route::post('/store-image', [ImageController::class, 'store'])->name('image.store');
 Route::get('/show-image', [ImageController::class, 'show'])->name('image.show');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Auth::routes();
+
+// Search Filter in Homepage
+Route::get('searchhomeproperties', [App\Http\Controllers\PagesController::class,'search'])->name('pages.search');
 
 
 Route::get('navbar', 'App\Http\Controllers\PagesController@navbar');
-Route::resource('agent', 'App\Http\Controllers\ContactsController');
+// Route::resource('agent', 'App\Http\Controllers\ContactsController');
 
 // Route::get('/home', 'App\Http\Controllers\HomeController::class, 'index')->name('home');
 

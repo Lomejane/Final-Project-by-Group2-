@@ -17,7 +17,8 @@
                     The best platform <br>to Buy and Sell properties</h3> <br>
                     <p style="font-size: 25px; color: white; font-family: 'Roboto Condensed', sans-serif;">
                     See properties that might <br> pique your interests</p>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width:10rem; height: 3rem; background-color:#368D96; border:none; border-radius: 8px;">Explore</button>
+                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width:10rem; height: 3rem; background-color:#368D96; border:none; border-radius: 8px; text-style: none;"> <a href="#Grid-Places">Explore</a></button>
+                   
                   </div>   
                 </div>
               

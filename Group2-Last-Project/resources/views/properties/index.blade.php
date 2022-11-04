@@ -26,8 +26,8 @@
 
     <script src="{{secure_asset('build/assets/app.css')}}"></script> --}}
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> --}}
-</head>
-</head>
+{{-- </head>
+</head> --}}
 
 
 @extends ('layouts.app')
@@ -35,33 +35,44 @@
 @section('content')
 
 
-<body style="background-color: #FAD9C1">
+{{-- <body style="background-color: #FAD9C1"> --}}
 
-<div Class="container-fluid justify-content-center align-items-center pt-2" style="margin-left:auto; margin-right:auto ">
-    <h1 Class="justify-content-center align-items-center" style="font-family: cursive; nfont-size:60px; text-align: center">Search Properties</h1>
-    <div Class="row p-2 mx-2 d-flex flex-row flex-wrap text-align-center justify-content-center align-items-center xbg-primary" style="justify-content: center; align-items:center; text-align:center" >
-    <form action="/properties/" method="get" >
+<div class="container-fluid justify-content-center align-items-center pt-2" style="margin-left:auto; margin-right:auto ">
+    <h1 class="justify-content-center align-items-center" style="font-family: cursive; nfont-size:60px; text-align: center">Search Properties</h1>
+    <div class="row p-2 mx-2 d-flex flex-row flex-wrap text-align-center justify-content-center align-items-center xbg-primary" style="justify-content: center; align-items:center; text-align:center" >
+
+    <form action="/searchproperties" method="get" enctype="multipart/form-data" class="xbg-warning">
       @csrf
-      <p>
-      <select class="btn bg-light" name="province" id="province" value="province" onchange="" style="width:200px; margin-right: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
-        <option value="All">Select Province</option>
+      <p class="row xbg-success p-2 mx-2 d-flex flex-row flex-wrap text-align-center justify-content-center align-items-center">
+      
+        <select class="btn bg-light" name="province" id="province" value="province" onchange =`href="/filterprovince/"` style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
+        <option value="">Select Province</option>
         @foreach($province as $item)
-          <option value={{($item->province_description)}}>{{(Str::title($item->province_description))}}</option>
+          <option value="{{($item->province_id)}}">{{(Str::title($item->province_description))}}</option>
+          {{-- <option value={{($item->province_description)}}>{{(Str::title($item->province_description))}}</option> --}}
+          {{-- {{(Str::title($item->province_description))}} --}}
         @endforeach;
       </select>
-
-      <select class="btn bg-light" name="citymun" id="citymun" value="citymun" style="width:200px; margin-right:10px; margin-bottom:5px; border: solid blue;  border-radius:15px">
-        <option value="All">Select /Municipality</option>
+      <select class="btn bg-light" name="citymun" id="citymun" value="citymun" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px">
+        <option value="">Select City/Municipality</option>
         @foreach($citymunicipality as $item)
-          <option value={{($item->city_mun_description)}}>{{(Str::title($item->city_mun_description))}}</option>
+          {{-- <option value="CEBU CITY">{{(Str::title($item->city_mun_description))}}</option> --}}
+          <option type="text" value={{($item->city_mun_id)}}>{{(Str::title($item->city_mun_description))}}</option>
         @endforeach;
-
       </select>
-      <button class="btn" type="submit" style="width:200px; border: solid blue;  border-radius:15px; background-color:#FE9C8F">Submit</button>
+      <select class="btn bg-light" name="price" id="price" value="price" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
+        <option value="">Select Price Range</option>
+        <option value="20,000,000.00">20,000,000.00 and above</option>
+        <option value="10,000,000.00">10,000,000.00 - 19,999,999.99</option>
+        <option value="9,999,999.99">9,999,999.99 and below</option>
+      </select>
+      <button class="btn filterButtonSubmit" type="submit" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:skyblue; color: blue; transform:scale(1:1.03)" ><b>Submit</b></button>
+
+        <a class="btn filterButtonReset" type="Reset"  style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:#FE9C8F; texts-decoration: none; color:red" href="/properties"><b>Reset</b></a>
+      
       </p>
     </form>
-</div>
-<br />    
+</div>   
 <div>
     <div Class="row">
         <div Class="propertiesList " >
@@ -80,7 +91,7 @@
                     </div>
                     <div Class="card-footer">
                         <!-- Button trigger modal -->
-                        <button type="" class="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:floralwhite; background-color:black; border-radius: 10px " >
+                        <button type="button" class="pl-2 pr-2 w-50 button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:floralwhite; background-color:black; border-radius: 10px " >
                         <b>DETAILS</b>
                         </Button>
                     </div>
@@ -111,7 +122,7 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" href="/resources/views/pages/Contact">Inquire</button>
+                        <button type="submit" class="btn btn-primary" href="/contact/">Inquire</button>
                       </div>
                     </div>
                   </div>

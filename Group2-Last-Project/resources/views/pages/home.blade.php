@@ -388,14 +388,14 @@
           </div> --}}
           <section id="recent">
           {{-- //Flex row layout --}}
-          <div class="recent-image d-flex justify-content-center align-items-center align-contents-center">
+          <div class=" row recent-image d-flex flex-row justify-content-center align-items-center ">
             {{--    --}}
              {{-- <img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image "> --}}
-            <h3 style="display: xinline-flex;"><img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image ">  Recent Listing</h3>
+            <h3 style="display:flex; justify-content:start" ><img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image">  Recent Listing</h3>
         </div>
-        <div class="container " > 
+        <div class="container " style="margin-left:auto; margin-right:auto" > 
           {{-- d-flex justify-content-around align-contents-center text-align-center align-items-center --}}
-          <div class="row d-flex flex-row flex-wrap justify-content-around align-items-center text-align-center align-items-center" >
+          <div class="row d-flex flex-row flex-wrap justify-content-around align-items-center text-align-center" >
             <!--Below, inserted height property to have uniform height for all images and cards-->
             <div class="col-md-4">
                 <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">

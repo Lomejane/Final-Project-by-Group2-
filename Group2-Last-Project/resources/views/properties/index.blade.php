@@ -89,7 +89,7 @@
                         {{-- <p>Details: {{$item->property_description}}</p> --}}
                         <br>
                     </div>
-                    <div Class="card-footer">
+                    <div Class="card-footer" style="height: auto">
                         <!-- Button trigger modal -->
                         <button type="button" class="pl-2 pr-2 w-50 button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:floralwhite; background-color:black; border-radius: 10px " >
                         <b>DETAILS</b>

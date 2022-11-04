@@ -34,11 +34,11 @@
       <a class="navbar-brand" href="/">
         <img src="/assets/1.png" alt="Company Logo" width="120px">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse pl-2" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse pl-2" id="navbarNavDropdown" style="justify-content:end">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/">Home</a>
           </li>
@@ -72,10 +72,14 @@
   @yield('content')
  </div>
  
-  <div className="container fluid" style="width: 100vw;">
-  <footer class="py-6 row justify-content-md-center">
-    <div class="row d-flex justify-content-between">
-      <div class="col-2" style="width: 15vw;">
+ {{-- <div class="container-fluid justify-content-center align-items-center pt-2" style="margin-left:auto; margin-right:auto "> --}}
+  <div className="container bg-warning" style=" xwidth: 100vw;">
+  <footer class="py-6 xrow xjustify-content-md-center">
+    <div class="row p-2 mx-2 d-flex xflex-row xflex-wrap xtext-align-center justify-content-center aalign-items-center xbg-primary" style="justify-content: center; align-items:center; text-align:left" >
+    {{-- <div class="row d-flex justify-content-between"> --}}
+      <div class=col-md-8>
+        <div class="row justify-content-around">
+      <div class="col-md-4 xbg-warning" style="width: x15vw;">
         <ul class="nav flex-column">
           <h4>Explore</h4>
           <li class="nav-item mb-2"><a href="">Home</a></li>
@@ -85,7 +89,7 @@
         </ul>
       </div>
 
-      <div class="col-2" style="width: 15vw;">
+      <div class="col-md-4 xbg-light" style="width: x15vw;">
         <ul class="nav flex-column">
           <h5>Latest Properties</h5>
           <li class="nav-item mb-2"><a href="">Metro Manila</a></li>
@@ -95,7 +99,7 @@
         </ul>
       </div>
 
-      <div class="col-2"style="width: 15vw;">
+      <div class="col-md-4 xbg-secondary"style="width: x15vw;">
         <ul class="nav flex-column">
           <h5>Follow Us</h5>
           <li class="nav-item mb-2"><a href="">Youtube</a></li>
@@ -104,27 +108,38 @@
           <li class="nav-item mb-2"><a href="">Twitter</a></li>
         </ul>
       </div>
-
-      <div className="col-6" style="width: 16vw;">
-        <div class="card w-100 shadow lg p-1 mb-2" style="width: 15vw; padding: 5px; background-color: #FAD9C1">
-          <form>
-            <h5>Subscribe to our newsletter</h5>
+        </div>
+    </div>
+      <div class="col-md-4 xbg-info flex-column" style="max-width: 300px;size:auto">
+        <div class="row xd-flex xflex-row xbg-info">
+          <div class="card col-md-12 xcard w-100 shadow lg p-1 mb-2" style="xwidth: 25vw; padding: 5px;background-color: #FAD9C1">
+          <h5>Subscribe to our newsletter</h5>
             <p>We'll provide recent updates on property listings, promotions, sales and more.</p>
+          <form>
+            {{-- <h5>Subscribe to our newsletter</h5>
+            <p>We'll provide recent updates on property listings, promotions, sales and more.</p> --}}
             <input type="text" class="form-control w-100" name="email" placeholder="Email">
             <br>
             {{-- <button  class="btn btn-dark btn-lg w-100" type="submit">Subscribe</button> --}}
             <button type="button" class="btn-lg w-100" style="font-family:'Poppins', sans-serif; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Subscribe</button>
           </form>
+          </div>
+          </div>
         </div>
       </div>
-      <br>
-      <div class="py-5 my-5" style="border-top: 1px solid #10202b">
-        <p>© 2022 Lem Properties.ph, All rights reserved.</p>
-      </div>
     </div>
-      
-  </footer>
 
+      {{-- <br> --}}
+      <div style="border-top: 1px solid #10202b; background-color:#FAD9C1">
+      {{-- <hr style="border-top: 2px solid #10202b; background-color:#FAD9C1"> --}}
+        <p class="py-0 my-0 text-center" style="background-color:#FAD9C1">© 2022 Lem Properties.ph, All rights reserved.</p>
+      </div>
+
+      {{-- <div class="py-5 xmy-5 bg-success" >
+              <hr style="border-top: 1px solid #10202b">
+        <p>© 2022 Lem Properties.ph, All rights reserved.</p>
+      </div> --}}
+  </footer>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

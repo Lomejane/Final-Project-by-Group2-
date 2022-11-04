@@ -69,6 +69,9 @@ Route::get('/show-image', [ImageController::class, 'show'])->name('image.show');
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Auth::routes();
 
+// Search Filter in Homepage
+Route::get('searchhomeproperties', [App\Http\Controllers\PagesController::class,'search'])->name('pages.search');
+
 
 Route::get('navbar', 'App\Http\Controllers\PagesController@navbar');
 // Route::resource('agent', 'App\Http\Controllers\ContactsController');

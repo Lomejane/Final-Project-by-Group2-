@@ -29,19 +29,12 @@
 <body>
 
 {{-- <body style="background-color: #FAD9C1"> --}}
-  <nav class="navbar navbar-expand-lg" style="background-color: #10202b;">
-
+  <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #10202b;">
     <div class="container-fluid text-white">
-<<<<<<< HEAD
-      <a class="navbar-brand" href="#">
-        <img src="/assets/1.png" alt="Company Logo" width="120px"></a>
-      <button class="navbar-toggler bg-dark mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-=======
       <a class="navbar-brand" href="/">
         <img src="/assets/1.png" alt="Company Logo" width="120px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
->>>>>>> 87398bf68e412b0c8dee269fa347d7bb8dad3873
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse pl-2" id="navbarNavDropdown">
@@ -79,9 +72,9 @@
   @yield('content')
  </div>
  
-  <div className="container" style="width: 100vw;">
+  <div className="container fluid" style="width: 100vw;">
   <footer class="py-6 row justify-content-md-center">
-    <div class="row w-75 d-flex justify-content-between">
+    <div class="row d-flex justify-content-between">
       <div class="col-2" style="width: 15vw;">
         <ul class="nav flex-column">
           <h4>Explore</h4>
@@ -112,8 +105,8 @@
         </ul>
       </div>
 
-      <div className="col-4" style="width: 16vw;">
-        <div class="card shadow lg p-1 mb-2" style="width: 15vw; padding: 5px; background-color: #FAD9C1">
+      <div className="col-6" style="width: 16vw;">
+        <div class="card w-100 shadow lg p-1 mb-2" style="width: 15vw; padding: 5px; background-color: #FAD9C1">
           <form>
             <h5>Subscribe to our newsletter</h5>
             <p>We'll provide recent updates on property listings, promotions, sales and more.</p>
@@ -125,7 +118,7 @@
         </div>
       </div>
       <br>
-      <div class="py-5 my-5" style="border-top: 1px solid black;">
+      <div class="py-5 my-5" style="border-top: 1px solid #10202b">
         <p>© 2022 Lem Properties.ph, All rights reserved.</p>
       </div>
     </div>

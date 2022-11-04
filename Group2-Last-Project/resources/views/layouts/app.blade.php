@@ -32,13 +32,19 @@
   <nav class="navbar navbar-expand-lg" style="background-color: #10202b;">
 
     <div class="container-fluid text-white">
+<<<<<<< HEAD
+      <a class="navbar-brand" href="#">
+        <img src="/assets/1.png" alt="Company Logo" width="120px"></a>
+      <button class="navbar-toggler bg-dark mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+=======
       <a class="navbar-brand" href="/">
         <img src="/assets/1.png" alt="Company Logo" width="120px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+>>>>>>> 87398bf68e412b0c8dee269fa347d7bb8dad3873
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse pl-2" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/">Home</a>

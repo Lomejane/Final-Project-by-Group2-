@@ -168,6 +168,20 @@ body{
     background-color: rgba(5, 50, 255, 0.945);
     color: white;
   }
+  .filterButtonSubmit:hover {
+    box-shadow: 2px 2px 2px 2px rgba(106, 158, 253, 0.5);
+    transform:scale(1.03);
+    transform-origin: center;
+    transition-delay: 0.4sec;
+    transition: all 1sec;
+  }
+  .filterButtonReset:hover {
+    box-shadow: 2px 2px 2px 2px rgba(106, 158, 253, 0.5);
+    transform:scale(1.03);
+    transform-origin: center;
+    transition-delay: 0.4sec;
+    transition: all 1sec;
+  }
   .filterButtonsVertical {
     width: 200px;
     margin-left: auto;

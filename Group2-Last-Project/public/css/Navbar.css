@@ -19,15 +19,9 @@
   border-bottom: 2px solid #368D96;
   color: #ffff;
   width: auto;
-  /* text-align: center;
-  justify-content: center; */
 }
 
 
-/* a :hover{
-  color: white;
-  border-bottom: #368D96;
-} */
 .dropdown-menu{
   color: #000;
   background-color: #14537d;
@@ -35,7 +29,8 @@
 
 /* Discover */
 #discover {
-  height: 120vh;
+  min-height: 130vh;
+  width: cover;
 }
   
 /* RECENT */
@@ -43,7 +38,7 @@
 #recent {
   padding: 10px;
   height: 80vh;
-  /* width: 100vw; */
+  width: auto;
   background-color: #10202B;
   }
   
@@ -124,7 +119,6 @@
 
 footer {
   min-height: 50vh;
-  width: 100vw;
   color: #000;
   background-color: #FAD9C1;
   padding: 30px;
@@ -134,5 +128,11 @@ footer {
 footer a {
   text-decoration: none;
   color:#000;
-  list-style-type: none;  
+  list-style-type: none; 
+  font-size: 17px; 
+}
+.nav a:hover {
+  color: #000;
+  border-bottom: 2px solid #368D96;
+  width: auto;
 }

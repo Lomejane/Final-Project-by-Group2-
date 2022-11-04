@@ -1,15 +1,16 @@
 @extends('layouts.app')
 
     @section('content')
+    
         <main>
           {{-- HOME --}}
         <section id="Home" style="
-          min-height: 65vh;
+          min-height: 70vh;
           background-color: #09141d;">
             <div class="container">
               <!-- Stack the columns on mobile by making one full-width and the other half-width -->
               <div class="row">
-                <div class="col-6 col-md-4 d-flex mt-4">
+                <div class="col col-md-4 d-flex justify-content-center">
                   <div className="Hero-Subtitle" style="padding-top:60px;">
                     <h3 style="  font-size: 46px; color: #fff; font-family: 'Poppins', sans-serif;">
                     The best platform <br>to Buy and Sell properties</h3> <br>
@@ -19,7 +20,7 @@
                   </div>   
                 </div>
               
-                <div class="col-md-8 mb-3">
+                <div class="col md-2 d-flex justify-content-center">
                   <div class="HouseHero">
                     <img style=" margin-top: 3%;
                     height: 60vh;
@@ -35,21 +36,21 @@
         </section>
         {{-- SEARCH FILTER --}}
         <section class="Search-Filter" style="min-height: 15vh; padding: 30px; background-color: #368D96;">
-          <div class="row row-cols-lg-auto g-4 justify-content-center">
-
-            <div class="col">
-              <div class="input-group mb-2">
-                <label class="input-group-text" for="inputGroupSelect01" style="height: 4rem; font-size: 1.2rem;">Location</label>
-                <select class="form-select" id="inputGroupSelect01" style="font-size: 1.2rem;">
-                  <option selected>Select..</option>
-                  <option value="1">Luzon</option>
-                  <option value="2">Visayas</option>
-                  <option value="3">Mindanao</option>
-                </select>
+          <div class="container">
+            <div class="row">
+              <div class="col mb-2 d-flex justify-content-center">
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="inputGroupSelect01" style="height: 4rem; min-width: 6rem; font-size: 1.2rem;">Location</label>
+                  <select class="form-select" id="inputGroupSelect01" style="font-size: 1.2rem;">
+                    <option selected>Select..</option>
+                    <option value="1">Luzon</option>
+                    <option value="2">Visayas</option>
+                    <option value="3">Mindanao</option>
+                  </select>
+                </div>
               </div>
-              </div>
 
-              <div class="col">
+              <div class="col mb-2 d-flex justify-content-center">
                 <div class="input-group mb-3">
                   <label class="input-group-text" for="inputGroupSelect01" style="height: 4rem; font-size: 1.2rem;">Property:</label>
                   <select class="form-select" id="inputGroupSelect01" style="font-size: 1.2rem;">
@@ -61,7 +62,7 @@
                 </div>
               </div>
 
-              <div class="col">
+              <div class="col mb-2 d-flex justify-content-center">
                 <div class="input-group mb-3">
                   <label class="input-group-text" for="inputGroupSelect01" style="height: 4rem; font-size: 1.2rem;">Estimated</label>
                   <select class="form-select" id="inputGroupSelect01" style="font-size: 1.2rem;">
@@ -76,42 +77,44 @@
               <div class="col" style="padding: 7px;">
                 <button class="btn btn-dark btn-lg" style="padding-bottom: 10px;">Search</button>
               </div>
-              
-            </div>
-          </section>
+            </div>    
+          </div>
+        </section>
           {{-- GRID PLACES --}}
           <section id="Grid-Places" style="  min-height: 50vh;">
             <br> <br>
-            <h3 class="text-center">Discover Awesome Properties</h3>
-            <br> <br>
+            <div class="container">
+              <h3 class="text-center">Discover Awesome Properties</h3>
+              <br> <br>
 
-            <div class="row row-cols-lg-auto g-3 justify-content-center">
+              <div class="row">
 
-              <div class="col">
-                <img class="shadow lg p-1 mb-2" src="/assets/DiningArea.jpg" style="width: 240px; min-height: 28vh; border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" alt="Dining Area">
-              </div>
+                <div class="col mb-2 d-flex justify-content-center">
+                  <img class="shadow lg p-1" src="/assets/DiningArea.jpg" style="width: 240px; min-height: 28vh; border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" alt="Dining Area">
+                </div>
 
-              <div class="col">
-                <img class="shadow lg p-1 mb-2" src="/assets/a.jpg" style="width: 240px; min-height: 28vh; border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" alt="Dining Area">
+                <div class="col mb-2 d-flex justify-content-center">
+                  <img class="shadow lg p-1" src="/assets/a.jpg" style="width: 240px; min-height: 28vh; border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" alt="Dining Area">
+                </div>
+                <div class="col mb-2 d-flex justify-content-center">
+                  <img class="shadow lg p-1" src="/assets/property1.jpg" style="width: 240px; min-height: 28vh; border-top-right-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" alt="Dining Area">
+                </div>
+                <div class="col mb-2 d-flex justify-content-center">
+                  <img class="shadow lg p-1" src="/assets/Bathroom.jpg" style="width: 240px; min-height: 28vh; border-top-right-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" alt="Dining Area">
+                </div> 
               </div>
-              <div class="col">
-                <img class="shadow lg p-1 mb-2" src="/assets/property1.jpg" style="width: 240px; min-height: 28vh; border-top-right-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" alt="Dining Area">
-              </div>
-              <div class="col">
-                <img class="shadow lg p-1 mb-2" src="/assets/Bathroom.jpg" style="width: 240px; min-height: 28vh; border-top-right-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" alt="Dining Area">
-              </div> 
             </div>
         </section>
         <br>
         {{-- DISCOVER --}}
-        <section id="discover" style="background-color: #FAD9C1">
+        <section id="discover d-flex justify-content-center" style="background-color: #FAD9C1">
           <br><br>
           <h3 class="text-center">All Over The Philippines</h3>
           <br> 
           <br>
           <div class="container">
-            <div class="row d-flex justify-content-around">
-              <div class="col">
+            <div class="row">
+              <div class="col mb-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 20rem;">
                   <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
                   <div class="card-body">
@@ -124,7 +127,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col mb-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 20rem;">
                   <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
                   <div class="card-body">
@@ -138,7 +141,7 @@
                 </div>
               </div>
 
-              <div class="col">
+              <div class="col mb-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 20rem;">
                   <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
                   <div class="card-body">
@@ -152,10 +155,10 @@
                 </div>
               </div>
             </div>
-            <br> <br> <br>
+            <br> <br> 
               <div class="container">
-                <div class="row d-flex justify-content-around">
-                  <div class="col">
+                <div class="row">
+                  <div class="col mb-2 d-flex justify-content-center">
                     <div class="card shadow" style="width: 20rem;">
                       <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
                       <div class="card-body">
@@ -168,7 +171,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col mb-2 d-flex justify-content-center">
                     <div class="card shadow" style="width: 20rem;">
                       <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
                       <div class="card-body">
@@ -182,7 +185,7 @@
                     </div>
                   </div>
     
-                  <div class="col">
+                  <div class="col mb-2 d-flex justify-content-center">
                     <div class="card shadow" style="width: 20rem;">
                       <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
                       <div class="card-body">
@@ -198,7 +201,9 @@
                 </div>
             {{--  --}}
           </div>
+          <br>
         </section>
+        
         {{-- RECENT --}}
         <section id="recent">
           <div class="recent-property-container">

@@ -9,9 +9,10 @@
           background-color: #09141d;">
             <div class="container">
               <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-              <div class="row">
-                <div class="col col-md-4 d-flex justify-content-center">
-                  <div className="Hero-Subtitle" style="padding-top:60px;">
+              <div class="row d-flex flex-row flex-wrap">
+                <div class="col-md-6 d-flex justify-content-center">
+                  <div class="card" style="padding-top:60px; height: 450px;
+                  width: 500px; background-color:#09141d">
                     <h3 style="  font-size: 46px; color: #fff; font-family: 'Poppins', sans-serif;">
                     The best platform <br>to Buy and Sell properties</h3> <br>
                     <p style="font-size: 25px; color: white; font-family: 'Roboto Condensed', sans-serif;">
@@ -20,11 +21,12 @@
                   </div>   
                 </div>
               
-                <div class="col md-2 d-flex justify-content-center">
-                  <div class="HouseHero">
+                <div class="col-md-6 d-flex justify-content-center" style="max-height: 450px;
+                -max-width: 600px;">
+                  <div class="card" style=background-color:#09141d>
                     <img style=" margin-top: 3%;
-                    height: 60vh;
-                    width: 40vw;
+                    height: auto;
+                    width: 600x;
                     border: solid black 3px;
                     border-top-left-radius: 190%;
                     border-top-right-radius: 190%;
@@ -216,7 +218,7 @@
                           {{-- <p>Details: {{$item->property_description}}</p> --}}
                           <br>
                       </div>
-                      <div Class="card-footer">
+                      <div Class="card-footer" style="height: auto">
                           <!-- Button trigger modal -->
                           <button type="button" class="pl-2 pr-2 w-50 button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:floralwhite; background-color:black; border-radius: 10px " >
                           <b>DETAILS</b>
@@ -315,8 +317,8 @@
       
         
         {{-- RECENT --}}
-        <section id="recent">
-          <div class="recent-property-container">
+        {{-- <section id="recent">
+          <div class="row d-flex flex-row recent-property-container">
               <div class="recent-image">
                   <img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image">
                   <h3>Recent Listing</h3>
@@ -382,6 +384,114 @@
                       </div>
                   </div>
               </div> 
+          </div> --}}
+          <section id="recent">
+          {{-- //Flex row layout --}}
+          <div class="recent-image d-flex justify-content-center align-items-center align-contents-center">
+            {{--    --}}
+             {{-- <img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image "> --}}
+            <h3 style="display: xinline-flex;"><img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image ">  Recent Listing</h3>
+        </div>
+        <div class="container " > 
+          {{-- d-flex justify-content-around align-contents-center text-align-center align-items-center --}}
+          <div class="row d-flex flex-row flex-wrap justify-content-around align-items-center text-align-center align-items-center" >
+            <!--Below, inserted height property to have uniform height for all images and cards-->
+            <div class="col-md-4">
+                <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
+                    <!--inserted overflow property-->
+                    <img src="/assets/condo.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
+                    <div class="card-body overlay">
+                      <p>123BZ Rizal St. Makati City</p>
+                      <p>3 Storey House with 5 bedrooms</p>
+                      <p>15,000 to 20,000 per month</p>
+                      <button class="btn "> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
+                    <!--inserted overflow property-->
+                    <img src="/assets/apartment.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
+                    <div class="card-body overlay">
+                      <p>123BZ Rizal St. Makati City</p>
+                      <p>3 Storey House with 5 bedrooms</p>
+                      <p>15,000 to 20,000 per month</p>
+                      <button class="btn "> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
+                    <!--inserted overflow property-->
+                    <img src="/assets/house.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
+                    <div class="card-body overlay">
+                      <p>123BZ Rizal St. Makati City</p>
+                      <p>3 Storey House with 5 bedrooms</p>
+                      <p>15,000 to 20,000 per month</p>
+                      <button class="btn "> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
+                    <!--inserted overflow property-->
+                    <img src="/assets/condo 2.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
+                    <div class="card-body overlay">
+                      <p>123BZ Rizal St. Makati City</p>
+                      <p>3 Storey House with 5 bedrooms</p>
+                      <p>15,000 to 20,000 per month</p>
+                      <button class="btn "> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
+                    <!--inserted overflow property-->
+                    <img src="/assets/apartment2.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
+                    <div class="card-body overlay">
+                      <p>123BZ Rizal St. Makati City</p>
+                      <p>3 Storey House with 5 bedrooms</p>
+                      <p>15,000 to 20,000 per month</p>
+                      <button class="btn "> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
+                    <!--inserted overflow property-->
+                    <img src="/assets/house2.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
+                    <div class="card-body overlay">
+                      <p>123BZ Rizal St. Makati City</p>
+                      <p>3 Storey House with 5 bedrooms</p>
+                      <p>15,000 to 20,000 per month</p>
+                      <button class="btn "> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
+                    <!--inserted overflow property-->
+                    <img src="/assets/house.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
+                    <div class="card-body overlay">
+                      <p>123BZ Rizal St. Makati City</p>
+                      <p>3 Storey House with 5 bedrooms</p>
+                      <p>15,000 to 20,000 per month</p>
+                      <button class="btn "> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            </div>
+          </div>
           </div>
         </section>
         {{--  --}}
@@ -389,7 +499,7 @@
 
     <div>
       @endsection
-    </div>
+    {{-- </div> --}}
     
- </body> 
- </html>
+ {{-- </body> 
+ </html> --}}

@@ -28,7 +28,7 @@
 
 <body>
 
-<body style="background-color: #FAD9C1">
+{{-- <body style="background-color: #FAD9C1"> --}}
   <nav class="navbar navbar-expand-lg" style="background-color: #10202b;">
 
     <div class="container-fluid text-white">

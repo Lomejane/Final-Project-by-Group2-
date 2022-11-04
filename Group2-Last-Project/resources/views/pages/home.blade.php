@@ -5,7 +5,7 @@
         <main>
           {{-- HOME --}}
         <section id="Home" style="
-          min-height: 70vh;
+          min-height: 65vh;
           background-color: #09141d;">
             <div class="container">
               <!-- Stack the columns on mobile by making one full-width and the other half-width -->

@@ -1,4 +1,114 @@
-.about {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+#about {
+  max-height: 120vh;
+  min-width: 100vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+p{
+  font-size: 15px;
+}
+
+.row {
+  min-width: 100vw;
+  height: 90vh;
+}
+
+.col-md-4 {
+  /* background-image: url(/assets/torresur_hero2.jpg); */
+  background-image: url(/assets/2best.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .col-8 {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+} */
+p.word-wrap {
+  padding: 20px;
+  word-spacing: .5px;
+  font-size: 14pt;
+  text-align: justify;
+  
+}
+.text,
+.OurVision,
+.OurMission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.OurVision {
+  padding: 10px;
+}
+
+p {
+  font-size: 14pt;
+}
+
+/* * Smartphones */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* iPads */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+
+}
+
+/* Smartphones (landscape) */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* Desktops and Laptops */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large Screens */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* #img-bg {
+  min-width: 100vw;
+  height: 45vh;
+  background-image: url(/assets/torresur_hero2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* .aboutTop img{
+
+} */
+
+/* .about {
     width: 100%;
     height: 90vh;
     display: flex;
@@ -42,7 +152,7 @@
     display: flex;
     justify-content: center;
     transform: translateY(-40px);
-  }
+  } */
   
   /* .text-center p {
     text-align: justify;

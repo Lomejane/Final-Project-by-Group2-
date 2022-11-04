@@ -197,6 +197,7 @@ class PropertiesController extends Controller
                 'citymunicipality' =>$citymunicipality
             ];
             return view('properties.index')->with($data);
+            
     }
 
     /**
